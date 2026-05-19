@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations Nokyoong SWU </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;600;700&display=swap');
+
+        :root {
+            --swu-red: #9e1b32;
+            --swu-pink: #fce4e6;
+            --text-dark: #2d3436;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Anuphan', sans-serif;
+        }
+
+        body {
+            background-color: #ffeef0;
+            color: var(--text-dark);
+            line-height: 1.6;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        #canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1; 
+        }
+
+        .container {
+            position: relative;
+            z-index: 10;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        .logo-placeholder {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            animation: bounce 2s infinite;
+        }
+
+        .logo-placeholder img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: var(--swu-red);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Card Style */
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+            border: 1px solid var(--swu-pink);
+            backdrop-filter: blur(5px);
+        }
+
+        h2 {
+            color: var(--swu-red);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        /* Timeline for Future Plans */
+        .timeline {
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background: #ffb8bc;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .timeline-item::before {
+            content: '✨';
+            position: absolute;
+            left: -31px;
+            top: 2px;
+            font-size: 0.85rem;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 3px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #444;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="canvas"></canvas>
+
+    <div class="container">
+        <header>
+            <div class="logo-placeholder">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Logo_of_Srinakharinwirot_University.svg/330px-Logo_of_Srinakharinwirot_University.svg.png" alt="โลโก้ มศว">
+            </div>
+            <h1>ติดมศว.แล้วเย้</h1>          
+        </header>
+        <section class="card">
+            <h2>ดีใจด้วยนะติดมอที่อยากติด</h2>
+            <p>เค้าภูมิใจเธอมากเลยนะเค้าลุ้นตัวเกร็งไปด้วยเลย แต่ติดแล้วยินดีด้วยนะอ้วน เย้ๆๆ</p>
+        </section>
+        <section class="card">
+            <h2>แพลนที่เค้าคิดไว้นิหน่อยหลังจากเธอติด</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-title">หาหอให้เธอ</div>
+                    <p>เค้าบอกเลยจะหาหอที่มันอยู่ใรทำเลที่ดีให้เอง เชื่อมือเค้าเลย</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-title">ไปฉลองกันน</div>
+                    <p>พาเธอเที่ยวนิดๆหน่อยๆ อยากพาเธอดูหนังที่อยากดู กับพาเธอไปที่โปรดเค้า</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-title">ทำงานด้วยกัน</div>
+                    <p>เดี๋ยวเค้าจะพาเธอทำงานเองเดะเค้าหาให้ ถ้าเธออยากทำ เเล้วก็เดี๋ยวเค้าทำด้วยดีมั้ยครับ</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>เค้าอวยพรให้นิดนึง</h2>
+            <p>ขอให้ชีวิตในมหาวิทยาลัยของเธอเจอแต่สิ่งดีๆ นะครับขอให้ได้เจอเพื่อนดีๆ(มีเพื่อนเยอะๆนะจะได้ไม่เหงา) ขอให้ได้คะแนนดีๆ แต่อย่าลืมดูแลสุขภาพตัวเองด้วย ขอให้เธอรู้ไว้เสมอว่ายังมีเค้าอยู่ข้างๆ เค้าคอยซัพพอร์ตตรงนี้เสมอนะ</p>
+        </section>
+    </div>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+        class Firework {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = canvas.height;
+                this.targetY = Math.random() * (canvas.height * 0.6);
+                this.speed = 4 + Math.random() * 4;
+                this.particles = [];
+                this.exploded = false;
+                this.color = `hsl(${Math.random() * 360}, 100%, 65%)`;
+            }
+            update() {
+                if (!this.exploded) {
+                    this.y -= this.speed;
+                    if (this.y <= this.targetY) {
+                        this.exploded = true;
+                        this.explode();
+                    }
+                } else {
+                    this.particles.forEach((p, i) => {
+                        p.x += p.vx;
+                        p.y += p.vy;
+                        p.vy += 0.04;
+                        p.alpha -= 0.015;
+                        if (p.alpha <= 0) this.particles.splice(i, 1);
+                    });
+                }
+            }
+            explode() {
+                for (let i = 0; i < 30; i++) {
+                    const angle = Math.random() * Math.PI * 2;
+                    const speed = Math.random() * 3 + 1;
+                    this.particles.push({
+                        x: this.x,
+                        y: this.y,
+                        vx: Math.cos(angle) * speed,
+                        vy: Math.sin(angle) * speed,
+                        alpha: 1
+                    });
+                }
+            }
+            draw() {
+                if (!this.exploded) {
+                    ctx.fillStyle = this.color;
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, 2.5, 0, Math.PI * 2);
+                    ctx.fill();
+                } else {
+                    this.particles.forEach(p => {
+                        ctx.fillStyle = this.color;
+                        ctx.globalAlpha = p.alpha;
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+                        ctx.fill();
+                    });
+                    ctx.globalAlpha = 1;
+                }
+            }
+        }
+        const fireworks = [];
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            if (Math.random() < 0.03 && fireworks.length < 6) {
+                fireworks.push(new Firework());
+            }
+            fireworks.forEach((f, i) => {
+                f.update();
+                f.draw();
+                if (f.exploded && f.particles.length === 0) {
+                    fireworks.splice(i, 1);
+                }
+            });
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+</body>
+</html>
